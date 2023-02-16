@@ -43,9 +43,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <ehcache3.version>3.9.0</ehcache3.version>
-        <spring.version>5.3.23</spring.version>
-        <spring.security.version>5.8.1</spring.security.version>
-        <spring.boot.version>2.7.5</spring.boot.version>
+        <spring.version>6.0.4</spring.version>
+        <spring.security.version>6.0.1</spring.security.version>
+        <spring.boot.version>3.0.2</spring.boot.version>
         <jackson.version>2.13.3</jackson.version>
         <lombok.version>1.18.24</lombok.version>
         <maven.source.plugin.version>2.4</maven.source.plugin.version>
@@ -80,8 +80,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                     <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
+                        <source>17</source>
+                        <target>17</target>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -233,7 +233,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>animal-sniffer-maven-plugin</artifactId>
-                <version>1.18</version>
+                <version>1.22</version>
                 <executions>
                     <execution>
                         <id>sniff</id>
@@ -246,7 +246,7 @@
                 <configuration>
                     <signature>
                         <groupId>org.codehaus.mojo.signature</groupId>
-                        <artifactId>java18</artifactId>
+                        <artifactId>Java17</artifactId>
                         <version>1.0</version>
                     </signature>
                 </configuration>
@@ -1239,7 +1239,7 @@
                 <groupId>org.hsqldb</groupId>
                 <artifactId>hsqldb</artifactId>
                 <version>2.7.1</version>
-                <classifier>jdk8</classifier>
+<!--                <classifier>jdk8</classifier>-->
                 <scope>test</scope>
             </dependency>
 
